@@ -11,9 +11,7 @@ describe('DefaultFooterComponent', () => {
       declarations: [ DefaultFooterComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(DefaultFooterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
