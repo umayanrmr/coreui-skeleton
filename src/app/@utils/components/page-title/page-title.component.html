@@ -1,0 +1,11 @@
+
+<div class="container page-title d-flex flex-column justify-content-center">
+    <div class="bc">
+        <span (click)="onBCClick(item)" *ngFor="let item of bread_crumbs">{{item.title}}</span>
+    </div>
+    <div class="t p-relative">
+        <div class="priority" style="top: 30px;"></div>
+        {{title}}
+    </div>
+</div>
+

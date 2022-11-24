@@ -1,0 +1,4 @@
+<div class="alert alert-{{alert.color}} alert-dismissible fade show shadow-lg" role="alert">
+    <div [innerHTML]="alert.message"></div>
+    <button type="button" class="btn-close" (click)="remove()" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>

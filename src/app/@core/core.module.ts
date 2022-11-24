@@ -25,21 +25,19 @@ import {
   UtilitiesModule
 } from '@coreui/angular';
 import { IconModule } from '@coreui/icons-angular';
+
+import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
+import { DefaultFooterComponent } from './components/default-footer/default-footer.component';
+import { DefaultHeaderComponent } from './components/default-header/default-header.component';
 import {
   PerfectScrollbarConfigInterface,
   PerfectScrollbarModule,
   PERFECT_SCROLLBAR_CONFIG
 } from 'ngx-perfect-scrollbar';
-import { DefaultLayoutComponent } from './layouts/default-layout/default-layout.component';
-import { DefaultFooterComponent } from './components/default-footer/default-footer.component';
-import { DefaultHeaderComponent } from './components/default-header/default-header.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
 };
-
-
-
 
 const COREUI_MODULES = [
   AvatarModule,
@@ -52,20 +50,18 @@ const COREUI_MODULES = [
   IconModule,
   NavModule,
   ButtonModule,
-  FormModule,
-  UtilitiesModule,
-  ButtonGroupModule,
-  ReactiveFormsModule,
-  SharedModule,
-  TabsModule,
-  ListGroupModule,
-  ProgressModule,
+  // FormModule,
+  // UtilitiesModule,
+  // ButtonGroupModule,
+  // ReactiveFormsModule,
+  // SharedModule,
+  // TabsModule,
+  // ListGroupModule,
+  // ProgressModule,
   BadgeModule,
-  ListGroupModule,
-  CardModule
+  // ListGroupModule,
+  // CardModule
 ]
-
-
 
 @NgModule({
   declarations: [
@@ -77,8 +73,8 @@ const COREUI_MODULES = [
     CommonModule,
     BrowserAnimationsModule,
     RouterModule,
-    PerfectScrollbarModule,
     ...COREUI_MODULES,
+    PerfectScrollbarModule,
   ],
   providers: [
     {

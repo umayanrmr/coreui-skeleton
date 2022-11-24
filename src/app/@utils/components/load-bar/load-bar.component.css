@@ -1,0 +1,26 @@
+.notif-progress-bar {
+    background-color: #0091ea!important;
+    height: 2px;
+    -webkit-transition: width 1.3s ease-in-out;
+    -moz-transition: width 1.3s ease-in-out;
+    -o-transition: width 1.3s ease-in-out;
+    transition: width 1.3s ease-in-out;
+}
+
+
+.notif-progress {
+    height: 2px;
+    overflow: hidden;
+    z-index: 3;
+    background-color: #80d8ff;
+    width: 100%;
+    position: absolute;
+    /* top: -1px; */
+    left: 0;
+}
+
+
+.notif-progress.topbar,.notif-progress.topbar .notif-progress-bar {
+    height: 3px;
+}
+
