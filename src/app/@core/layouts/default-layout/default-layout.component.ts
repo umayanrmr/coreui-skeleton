@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppLoaderService } from 'src/app/@services/app-loader.service';
 import { navItems } from 'src/_nav';
 
 @Component({
@@ -13,7 +14,7 @@ export class DefaultLayoutComponent implements OnInit {
   public perfectScrollbarConfig = {
     suppressScrollX: true,
   };
-  constructor() { }
+  constructor(public app_loadert_service: AppLoaderService,) { }
 
   ngOnInit(): void {
   }

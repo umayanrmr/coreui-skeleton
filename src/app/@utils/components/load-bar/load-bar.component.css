@@ -11,10 +11,10 @@
 .notif-progress {
     height: 2px;
     overflow: hidden;
-    z-index: 3;
     background-color: #80d8ff;
+    z-index: 1030;
     width: 100%;
-    position: absolute;
+    position: fixed;
     /* top: -1px; */
     left: 0;
 }

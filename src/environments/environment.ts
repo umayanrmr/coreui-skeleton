@@ -7,7 +7,11 @@ export const environment = {
   app: {
     name: "Core UI Skeleton",
     logo: "",
-  }
+  },
+  cache_settings: {
+    val: 30,
+    type: 'minutes'
+  },
 };
 
 /*

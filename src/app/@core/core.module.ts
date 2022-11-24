@@ -34,6 +34,7 @@ import {
   PerfectScrollbarModule,
   PERFECT_SCROLLBAR_CONFIG
 } from 'ngx-perfect-scrollbar';
+import { UtilsModule } from '../@utils/utils.module';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
@@ -75,6 +76,7 @@ const COREUI_MODULES = [
     RouterModule,
     ...COREUI_MODULES,
     PerfectScrollbarModule,
+    UtilsModule
   ],
   providers: [
     {

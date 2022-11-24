@@ -1,0 +1,18 @@
+
+
+
+            <!-- <div  class="notif-progress topbar" >
+                <div class="notif-progress-bar" role="progressbar" width="50%" ></div>
+            </div> -->
+
+<router-outlet></router-outlet>
+
+
+
+
+<div id="alerts-holder">    
+    <util-alert *ngFor="let item of alert_service.alerts$ | async" 
+                [alert]="item" 
+                (onRemove)="remove_alert($event)">
+    </util-alert>
+</div>

@@ -1,0 +1,13 @@
+
+
+#alerts-holder {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index:  2050;
+}
+  
+
+.notif-progress.topbar,.notif-progress.topbar .notif-progress-bar {
+    height: 5px;
+}
